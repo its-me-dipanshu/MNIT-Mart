@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="View grocery product details at MNIT Mart, MNIT Jaipur.">
+
+    <title>Product Details | MNIT Mart</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            MNIT <span>Mart</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#categories">Categories</a>
+            <a href="index.html#products">Products</a>
+            <a href="cart.html" class="cart-link">
+                Cart (<span id="cartCount">0</span>)
+            </a>
+        </nav>
+
+        <a href="index.html#products" class="nav-btn">
+            Explore Store
+        </a>
+
+    </header>
+
+    <main>
+
+        <section class="product-page">
+
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="index.html#products">Products</a>
+                <span>/</span>
+                <span>Product Details</span>
+            </div>
+
+            <div class="product-detail-container" id="productDetails">
+
+                <div class="product-detail-image">
+
+                    <img
+                        src="images/bread.jpg"
+                        alt="Product image"
+                        id="productImage">
+
+                </div>
+
+                <div class="product-detail-content">
+
+                    <span class="section-tag" id="productCategory">
+                        PRODUCT CATEGORY
+                    </span>
+
+                    <h1 id="productName">
+                        Loading product...
+                    </h1>
+
+                    <p id="productDescription">
+                        Please wait while we load product details.
+                    </p>
+
+                    <h2 class="product-price" id="productPrice">
+                        ₹0.00
+                    </h2>
+
+                    <p id="productAvailability">
+                        Checking availability...
+                    </p>
+
+                    <div class="product-info">
+
+                        <p>
+                            <strong>Product ID:</strong>
+                            <span id="productId">-</span>
+                        </p>
+
+                        <p>
+                            <strong>Category:</strong>
+                            <span id="detailCategory">-</span>
+                        </p>
+
+                        <p>
+                            <strong>Available Stock:</strong>
+                            <span id="productStock">-</span>
+                        </p>
+
+                    </div>
+
+                    <div class="product-actions">
+
+                        <button
+                            type="button"
+                            class="primary-btn"
+                            id="addToCartButton">
+                            Add to Cart
+                        </button>
+
+                        <a href="index.html#products" class="secondary-btn">
+                            Back to Products
+                        </a>
+
+                    </div>
+
+                    <p id="cartMessage" class="cart-message" hidden>
+                        Product added to cart.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="product-error" id="productError" hidden>
+
+                <h2>Product Not Found</h2>
+
+                <p>
+                    The requested product could not be found.
+                    Please return to the product listing.
+                </p>
+
+                <a href="index.html#products" class="primary-btn">
+                    Browse Products
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="related-products">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-tag">MNIT MART</span>
+                    <h2>Explore More Products</h2>
+                </div>
+
+                <a href="index.html#products" class="secondary-btn">
+                    View All Products
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <a href="index.html" class="logo">
+                    MNIT <span>Mart</span>
+                </a>
+
+                <p>
+                    Your Campus Grocery Store.
+                    Made for everyday essentials.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="index.html#categories">Categories</a>
+                <a href="index.html#products">Products</a>
+                <a href="cart.html">Shopping Cart</a>
+
+            </div>
+
+            <div>
+
+                <h3>About</h3>
+
+                <p>MNIT Jaipur Campus Grocery Store</p>
+                <p>Academic Full-Stack Project</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>© 2026 MNIT Mart. All Rights Reserved.</p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

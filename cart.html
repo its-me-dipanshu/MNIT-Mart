@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="View and manage your shopping cart at MNIT Mart.">
+
+    <title>Shopping Cart | MNIT Mart</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            MNIT <span>Mart</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#categories">Categories</a>
+            <a href="index.html#products">Products</a>
+            <a href="cart.html" class="cart-link">
+                Cart (<span id="cartCount">0</span>)
+            </a>
+        </nav>
+
+        <a href="index.html#products" class="nav-btn">
+            Continue Shopping
+        </a>
+
+    </header>
+
+    <main>
+
+        <section class="cart-page">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-tag">YOUR SHOPPING CART</span>
+                    <h1>Shopping Cart</h1>
+                </div>
+
+                <p>
+                    Review your selected grocery products.
+                </p>
+
+            </div>
+
+            <div class="cart-container">
+
+                <div class="cart-items-section">
+
+                    <div class="cart-heading">
+                        <h2>Cart Items</h2>
+                        <span id="cartItemCount">0 Items</span>
+                    </div>
+
+                    <div id="cartItems">
+
+                        <p class="loading-message">
+                            Loading cart items...
+                        </p>
+
+                    </div>
+
+                    <p class="empty-message" id="cartEmptyMessage" hidden>
+                        Your cart is currently empty.
+                    </p>
+
+                    <a href="index.html#products" class="secondary-btn">
+                        Continue Shopping
+                    </a>
+
+                </div>
+
+                <aside class="cart-summary">
+
+                    <h2>Order Summary</h2>
+
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="cartSubtotal">₹0.00</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Delivery Charges</span>
+                        <span>₹0.00</span>
+                    </div>
+
+                    <div class="summary-divider"></div>
+
+                    <div class="summary-row summary-total">
+                        <strong>Total</strong>
+                        <strong id="cartTotal">₹0.00</strong>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="primary-btn checkout-btn"
+                        id="checkoutButton">
+                        Proceed to Checkout
+                    </button>
+
+                    <p class="cart-note">
+                        This is a demonstration shopping cart.
+                        No actual payment will be processed.
+                    </p>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <a href="index.html" class="logo">
+                    MNIT <span>Mart</span>
+                </a>
+
+                <p>
+                    Your Campus Grocery Store.
+                    Made for everyday essentials.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="index.html#categories">Categories</a>
+                <a href="index.html#products">Products</a>
+                <a href="cart.html">Shopping Cart</a>
+
+            </div>
+
+            <div>
+
+                <h3>About</h3>
+
+                <p>MNIT Jaipur Campus Grocery Store</p>
+                <p>Academic Full-Stack Project</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>© 2026 MNIT Mart. All Rights Reserved.</p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

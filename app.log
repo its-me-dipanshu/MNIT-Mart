@@ -1,0 +1,23 @@
+{"level":"info","message":"MNIT Mart server started on port 3000","timestamp":"2026-11-02 22:49:34"}
+{"ip":"::1","level":"info","message":"API request received","method":"GET","timestamp":"2026-11-02 22:49:50","url":"/api/health"}
+{"level":"info","message":"MNIT Mart server started on port 3000","timestamp":"2026-11-02 23:12:19"}
+{"ip":"::1","level":"info","message":"API request received","method":"GET","timestamp":"2026-11-02 23:12:33","url":"/api/products"}
+{"ip":"::1","level":"info","message":"API request received","method":"GET","timestamp":"2026-11-02 23:12:47","url":"/api/products"}
+{"ip":"::1","level":"info","message":"API request received","method":"GET","timestamp":"2026-11-02 23:13:30","url":"/api/products"}
+{"ip":"::1","level":"info","message":"API request received","method":"POST","timestamp":"2026-11-02 23:14:01","url":"/api/auth/register"}
+{"ip":"::1","level":"info","message":"API request received","method":"POST","timestamp":"2026-11-02 23:14:19","url":"/api/auth/register"}
+{"ip":"::1","level":"info","message":"API request received","method":"POST","timestamp":"2026-11-02 23:14:42","url":"/api/auth/register"}
+{"level":"warn","message":"Route not found: GET /style.css**?utm_source=chatgpt.com","timestamp":"2026-11-02 23:17:48"}
+{"level":"info","message":"MNIT Mart server started on port 3000","timestamp":"2026-11-02 23:20:32"}
+{"level":"info","message":"MNIT Mart server started on port 3000","timestamp":"2026-11-02 23:20:32"}
+{"level":"info","message":"MNIT Mart server started on port 3000","timestamp":"2026-11-02 23:20:42"}
+{"level":"info","message":"MNIT Mart server started on port 3000","timestamp":"2026-11-02 23:21:53"}
+{"level":"info","message":"MNIT Mart server started on port 3000","timestamp":"2026-11-02 23:21:53"}
+{"level":"info","message":"MNIT Mart server started on port 3000","timestamp":"2026-11-02 23:22:03"}
+{"level":"info","message":"MNIT Mart server started on port 3000","timestamp":"2026-11-02 23:25:59"}
+{"ip":"::1","level":"info","message":"API request received","method":"GET","timestamp":"2026-11-02 23:31:10","url":"/api/products"}
+{"ip":"::1","level":"info","message":"API request received","method":"GET","timestamp":"2026-11-02 23:33:11","url":"/api/products"}
+{"ip":"::1","level":"info","message":"API request received","method":"GET","timestamp":"2026-11-02 23:33:25","url":"/api/products"}
+{"ip":"::1","level":"info","message":"API request received","method":"GET","timestamp":"2026-11-02 23:34:41","url":"/api/health"}
+{"ip":"::1","level":"info","message":"API request received","method":"GET","timestamp":"2026-11-02 23:35:01","url":"/api/products?utm_source=chatgpt.com"}
+{"ip":"::1","level":"info","message":"API request received","method":"GET","timestamp":"2026-11-02 23:35:31","url":"/api/products/1?utm_source=chatgpt.com"}

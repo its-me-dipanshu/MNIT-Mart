@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="MNIT Mart - Your campus grocery shopping destination at MNIT Jaipur.">
+
+    <title>MNIT Mart | Campus Grocery Store</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            MNIT <span>Mart</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#products">Products</a>
+
+            <a href="cart.html" class="cart-link">
+                Cart (<span id="cartCount">0</span>)
+            </a>
+        </nav>
+
+        <!-- Authentication Navigation -->
+        <div class="auth-nav" id="authNav">
+
+            <a href="login.html" class="login-nav-btn">
+                Login
+            </a>
+
+            <a href="register.html" class="register-nav-btn">
+                Register
+            </a>
+
+        </div>
+
+        <!-- Logged-in User Navigation -->
+        <div class="auth-nav" id="userNav" hidden>
+
+            <span id="userGreeting"></span>
+
+            <button type="button" id="logoutBtn" class="logout-nav-btn">
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">WELCOME TO MNIT MART</span>
+
+                <h1>
+                    Everything You Need,
+                    <span>Just Around Campus.</span>
+                </h1>
+
+                <p>
+                    Your everyday grocery destination at MNIT Jaipur.
+                    Discover fresh groceries, snacks, beverages and
+                    daily essentials in one place.
+                </p>
+
+                <a href="#products" class="primary-btn">
+                    Explore Products
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img
+                    src="images/hero-grocery.jpg"
+                    alt="Fresh grocery products and vegetables">
+
+            </div>
+
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories" id="categories">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-tag">SHOP BY CATEGORY</span>
+                    <h2>Explore Categories</h2>
+                </div>
+
+                <p>
+                    Find your everyday essentials
+                    from our grocery collection.
+                </p>
+
+            </div>
+
+            <div class="category-container">
+
+                <button class="category-card active" data-category="">
+                    All Products
+                </button>
+
+                <button class="category-card" data-category="Fruits & Vegetables">
+                    Fruits & Vegetables
+                </button>
+
+                <button class="category-card" data-category="Snacks">
+                    Snacks
+                </button>
+
+                <button class="category-card" data-category="Dairy">
+                    Dairy Products
+                </button>
+
+                <button class="category-card" data-category="Beverages">
+                    Beverages
+                </button>
+
+                <button class="category-card" data-category="Personal Care">
+                    Personal Care
+                </button>
+
+                <button class="category-card" data-category="Staples">
+                    Daily Staples
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Products Section -->
+        <section class="products" id="products">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-tag">OUR COLLECTION</span>
+                    <h2>Popular Grocery Products</h2>
+                </div>
+
+                <p>
+                    Explore quality products
+                    for your daily needs.
+                </p>
+
+            </div>
+
+            <div class="product-tools">
+
+                <div class="search-box">
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search groceries, snacks, dairy..."
+                        aria-label="Search products">
+
+                </div>
+
+                <select
+                    id="categoryFilter"
+                    aria-label="Filter products by category">
+
+                    <option value="">All Categories</option>
+
+                    <option value="Fruits & Vegetables">
+                        Fruits & Vegetables
+                    </option>
+
+                    <option value="Snacks">
+                        Snacks
+                    </option>
+
+                    <option value="Dairy">
+                        Dairy Products
+                    </option>
+
+                    <option value="Beverages">
+                        Beverages
+                    </option>
+
+                    <option value="Personal Care">
+                        Personal Care
+                    </option>
+
+                    <option value="Staples">
+                        Daily Staples
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="product-container" id="productContainer">
+
+                <p class="loading-message">
+                    Loading grocery products...
+                </p>
+
+            </div>
+
+            <p class="empty-message" id="emptyMessage" hidden>
+                No products found. Try another search or category.
+            </p>
+
+        </section>
+
+        <!-- Store Banner -->
+        <section class="store-banner">
+
+            <div>
+
+                <span class="section-tag">MNIT CAMPUS STORE</span>
+
+                <h2>Your Daily Essentials, All in One Place.</h2>
+
+                <p>
+                    Explore our grocery collection
+                    and find everything you need.
+                </p>
+
+            </div>
+
+            <a href="#products" class="secondary-btn">
+                Browse Products
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <a href="index.html" class="logo">
+                    MNIT <span>Mart</span>
+                </a>
+
+                <p>
+                    Your Campus Grocery Store.
+                    Made for everyday essentials.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#products">Products</a>
+                <a href="cart.html">Shopping Cart</a>
+
+            </div>
+
+            <div>
+
+                <h3>Account</h3>
+
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+
+            </div>
+
+            <div>
+
+                <h3>About</h3>
+
+                <p>MNIT Jaipur Campus Grocery Store</p>
+                <p>Academic Full-Stack Project</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>© 2026 MNIT Mart. All Rights Reserved.</p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Authentication UI -->
+    <script src="auth.js"></script>
+
+</body>
+
+</html>
